@@ -1,0 +1,20 @@
+{
+  "name": "actual-menubar-main",
+  "version": "1.0.0",
+  "description": "A quick menu bar view of your Actual Budget categories",
+  "main": "main.js",
+  "author": "Luke Herrington <lherrington100@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --exec \"electron .\""
+  },
+  "dependencies": {
+    "@actual-app/api": "^1.0.1",
+    "electron": "^6.0.1",
+    "menubar": "^6.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "private": true,
+  "workspaces": ["actual-menubar-frontend", "actual-menubar-main"]
+}

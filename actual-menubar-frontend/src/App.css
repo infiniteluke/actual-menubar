@@ -1,0 +1,27 @@
+.App {
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.month {
+  margin-top: 5px;
+}
+
+.sync {
+  border: 0;
+  position: absolute;
+  margin: 10px;
+  right: 0;
+  top: 0;
+}
+
+.categories {
+  padding: 0 50px;
+  text-align: left;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+}
