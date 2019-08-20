@@ -1,5 +1,6 @@
 .App {
-  padding: 10px;
+  padding: 20px;
+  background-color: #f6f6f6;
   text-align: center;
   position: relative;
 }
@@ -9,6 +10,11 @@
 }
 
 .sync {
+  display: flex;
+  flex-direction: row;
+  background: lightgray;
+  padding: 5px 10px;
+  border-radius: 5px;
   border: 0;
   position: absolute;
   margin: 10px;
@@ -16,12 +22,39 @@
   top: 0;
 }
 
+.sync span {
+  font-size: 1.2em;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
+.sync svg {
+  transform: rotate(0);
+}
+
+.sync:focus svg {
+  transition: all 1s ease-out;
+  transform: rotate(360deg);
+}
+
 .categories {
-  padding: 0 50px;
   text-align: left;
 }
 
 .category {
   display: flex;
   justify-content: space-between;
+}
+
+.progress {
+  position: relative;
+}
+
+.progress .tick {
+  position: absolute;
+  width: 2px;
+  height: 75%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: darkgray;
 }

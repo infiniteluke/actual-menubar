@@ -7,9 +7,12 @@ const WebSocket = require("ws");
 let mb;
 const wss = new WebSocket.Server({ port: 1040 });
 
+const BUDGET_ID = '---Herringfam'
+
 app.on("ready", async () => {
-  // @TODO make configurable
-  await actual.init("My-Stash");
+  // @TODO make configurable or selectable in app
+  await actual.init();
+  await actual.loadBudget(BUDGET_ID)
   // @TODO icon
   mb = menubar({
     index: "http://localhost:3000",

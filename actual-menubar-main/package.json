@@ -10,7 +10,7 @@
     "start": "nodemon --exec \"electron .\""
   },
   "dependencies": {
-    "@actual-app/api": "^1.0.1",
+    "@actual-app/api": "https://github.com/actualbudget/node-api#973d05e41e77e4574537ae3b7e844d85d7122842",
     "electron": "^6.0.1",
     "menubar": "^6.0.7"
   },

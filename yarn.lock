@@ -2,10 +2,9 @@
 # yarn lockfile v1
 
 
-"@actual-app/api@^1.0.1":
+"@actual-app/api@https://github.com/actualbudget/node-api#973d05e41e77e4574537ae3b7e844d85d7122842":
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@actual-app/api/-/api-1.0.1.tgz#b13c800bd832ddcee01f87790f21b4f8b96623af"
-  integrity sha512-V8CxFqzcq/uIznrDHJIQ9Xpr+/bNHfgBrwi6uQQic0foafY2QUXIy/m0VMimxzUAjWhMOouRDWSV8CAwanz4zA==
+  resolved "https://github.com/actualbudget/node-api#973d05e41e77e4574537ae3b7e844d85d7122842"
   dependencies:
     node-ipc "9.1.1"
     uuid "3.3.2"
@@ -3075,6 +3074,11 @@ data-urls@^1.0.0, data-urls@^1.1.0:
     abab "^2.0.0"
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
+
+date-fns@^2.0.0-beta.5:
+  version "2.0.0-beta.5"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.0.0-beta.5.tgz#90885db3772802d55519cd12acd49de56aca1059"
+  integrity sha512-GS5yi964NDFNoja9yOdWFj9T97T67yLrUeJZgddHaVfc/6tHWtX7RXocuubmZkNzrZUZ9BqBOW7jTR5OoWjJ1w==
 
 date-now@^0.1.4:
   version "0.1.4"
