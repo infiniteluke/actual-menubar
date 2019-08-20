@@ -19,7 +19,8 @@ app.on("ready", async () => {
     tooltip: "Actual",
     fullscreenable: false,
     resizable: false,
-    height: 350
+    icon: path.resolve(__dirname, 'icon.png'),
+    height: 368
   });
 
   wss.on("connection", function(w) {
