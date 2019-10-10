@@ -7,19 +7,19 @@ const WebSocket = require("ws");
 let mb;
 const wss = new WebSocket.Server({ port: 1040 });
 
-const BUDGET_ID = '---Herringfam'
+const BUDGET_ID = "---Herringfam";
 
 app.on("ready", async () => {
   // @TODO make configurable or selectable in app
   await actual.init();
-  await actual.loadBudget(BUDGET_ID)
+  await actual.loadBudget(BUDGET_ID);
   // @TODO icon
   mb = menubar({
     index: "http://localhost:3000",
     tooltip: "Actual",
     fullscreenable: false,
     resizable: false,
-    icon: path.resolve(__dirname, 'icon.png'),
+    icon: path.resolve(__dirname, "icon.png"),
     height: 368
   });
 

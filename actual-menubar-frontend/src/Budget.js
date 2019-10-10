@@ -1,11 +1,11 @@
-import React from 'react';
-import { format, getDaysInMonth } from 'date-fns'
+import React from "react";
+import { format, getDaysInMonth } from "date-fns";
 
 export default ({ budget }) => {
   const date = new Date();
   return !budget ? null : (
     <section>
-      <h1 className="month">{format(date, 'LLLL')}</h1>
+      <h1 className="month">{format(date, "LLLL")}</h1>
       {budget.categoryGroups
         .filter(category => !category.is_income)
         .map(group => (
@@ -16,13 +16,20 @@ export default ({ budget }) => {
                 <div className="category" key={category.id}>
                   <label htmlFor={category.name}>{category.name}</label>
                   <div className="progress">
-                    <div className="tick" style={{ left: `${(date.getUTCDate() / getDaysInMonth(date)) * 100}%` }} />
+                    <div
+                      className="tick"
+                      style={{
+                        left: `${(date.getUTCDate() / getDaysInMonth(date)) *
+                          100}%`
+                      }}
+                    />
                     <progress
                       id={category.name}
                       max="1"
                       value={
                         Number(category.budgeted)
-                          ? Math.abs(Number(category.spent)) / Number(category.budgeted)
+                          ? Math.abs(Number(category.spent)) /
+                            Number(category.budgeted)
                           : 0
                       }
                     >
@@ -35,5 +42,5 @@ export default ({ budget }) => {
           </div>
         ))}
     </section>
-  )
-}
+  );
+};

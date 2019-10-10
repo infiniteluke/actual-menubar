@@ -1,5 +1,5 @@
-import React from 'react';
-import { format } from 'date-fns'
+import React from "react";
+import { format } from "date-fns";
 
 class Actual {
   constructor(store) {
@@ -16,10 +16,7 @@ class Actual {
   handleOpen = () => {
     if (this.store.state.connecting) {
       this.store.dispatch({ type: "connecting", data: false });
-      this.send(
-        "getBudgetMonth",
-        format(new Date(), 'yyyy-LL')
-      );
+      this.send("getBudgetMonth", format(new Date(), "yyyy-LL"));
     }
   };
 

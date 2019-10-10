@@ -28,15 +28,6 @@
   padding-left: 5px;
 }
 
-.sync svg {
-  transform: rotate(0);
-}
-
-.sync:focus svg {
-  transition: all 1s ease-out;
-  transform: rotate(360deg);
-}
-
 .categories {
   text-align: left;
 }
